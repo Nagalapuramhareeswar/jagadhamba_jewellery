@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Developer: N.Hareeswar ,Design: N.Hareeswar, Category: webapp">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+    <title>JAGADHAMBA JEWELLERY</title>
+</head>
+<body>
+    <div class="start">
+        <div class="logo"><img src="assets/logo.png" width="100px" height="100px" alt="logo"></div>
+    </div>
+    <div class="check">
+        <button id="shop" class="shop" onclick="changetoshop()">shop</button>
+        <button id="kacha" class="kacha" onclick="changetokacha()">kacha</button>
+        <form method="dialog" id="shop-form">
+            <label for="weight" style="color: #fff;">Weight : </label>
+            <input type="number" id="weight" step="any" name="weight" placeholder="weight" required>
+            <br>
+            <label for="percentage" style="color: #fff;">percentage : </label>
+            <input type="number" id="percentage" step="any" name="percentage" placeholder="percentage" required>
+            <br>
+            <label for="rate" style="color: #fff;">Rate : </label>
+            <input type="number" id="rate" step="any" name="rate" placeholder="rate" required>
+            <br>
+            <p id="price">Price :</p>
+            <p id="gst">Gst(3%) : </p>
+            <p id="total">Total :</p>
+            <input id="submit" onclick="myfunc()" type="submit" value="calculate">
+            <input id="clear" onclick="clearrate()" type="reset" value="clear">
+        </form>
+        <form method="dialog" id="kacha-form">
+            <label for="weight" style="color: #fff;">Weight : </label>
+            <input type="number" id="kacha-weight" step="any" name="weight" placeholder="weight" required>
+            <br>
+            <label for="kacha-touch" style="color: #fff;">Touch : </label>
+            <input type="number" id="kacha-touch" step="any" name="touch" placeholder="touch" required>
+            <br>
+            <label for="rate" style="color: #fff;">Rate : </label>
+            <input type="number" id="kacha-rate" step="any" name="rate" placeholder="rate" required>
+            <br>
+            <p id="kacha-total">Total :</p>
+            <input id="submit-kacha" onclick="calckacha()" type="submit" value="calculate">
+            <input id="clear-kacha" onclick="clearkacha()" type="reset" value="clear">
+        </form>
+        <button class="printbutton" onclick="window.print()">Print</button>
+    </div>
+</body>
+</html>

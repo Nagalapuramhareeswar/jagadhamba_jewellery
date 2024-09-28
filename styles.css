@@ -1,0 +1,159 @@
+:root{
+    --primarycolor:#efefe3;
+    --blackbg:#1d1e25;
+    --startbg:#1d1e00;
+    --bg:#000000;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: var(--blackbg);
+    overflow: hidden;
+    color:#fff;
+}
+.start{
+    background-color: var(--startbg);
+    width: 100vw;
+    height:100vh;
+    position: relative;
+    top:-100vh;
+    background-color:var(--bg);
+    animation: dis 1s linear 1;
+    display: grid;
+    place-items: center;
+    z-index: 1;
+}
+@keyframes dis{
+    0%{
+        top:0vh;
+    }
+    75%{
+        top:0vh;
+        
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        top:-100vh;
+        opacity: 0;
+    }
+}
+.check{
+    width:100vw;
+    height: 100vh;
+    background-color: var(--startbg);
+    position: relative;
+    top:-100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#weight{
+    width:70vw;
+    height: 4vh;
+    margin-bottom: 5vh;
+    border-radius: 2px;
+}
+#percentage{
+    width:64vw;
+    height: 4vh;
+    margin-bottom: 5vh;
+    border-radius: 2px;
+}
+#rate{
+    width:75vw;
+    height: 4vh;
+    margin-bottom: 2vh;
+    border-radius: 2px;
+    left: 15vw;
+}
+#kacha-weight{
+    width:70vw;
+    height: 4vh;
+    margin-bottom: 5vh;
+    border-radius: 2px;
+}
+#kacha-touch{
+    width:72vw;
+    height: 4vh;
+    margin-bottom: 5vh;
+    border-radius: 2px;
+}
+#kacha-rate{
+    width:75vw;
+    height: 4vh;
+    margin-bottom: 2vh;
+    border-radius: 2px;
+    left: 15vw;
+}
+#submit{
+    width:40vw;
+    height: 5vh;
+}
+#submit-kacha{
+    width:40vw;
+    height: 5vh;
+}
+p{
+    color: #efefe3;
+}
+#clear{
+    top:50px;
+    width:40vw;
+    height: 5vh;
+    float: inline-end;
+}
+#clear-kacha{
+    top:50px;
+    width:40vw;
+    height: 5vh;
+    float: inline-end;
+}
+form{
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+}
+#kacha-form{
+    /* display: block; */
+    display: none;
+    width:97vw;
+}
+#shop-form{
+    display: block;
+    /* display: none; */
+    width:97vw;
+    margin-top: 10vh;
+
+}
+.shop{
+    position: fixed;
+    top:15vh;
+    left:20vw;
+    width: 90px;
+    height: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    border:unset;
+    background-color: #dad200;
+}
+.kacha{
+    position: fixed;
+    top:15vh;
+    left:50vw;
+    width: 90px;
+    height: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    border:unset;
+}
+
+.printbutton{
+    width: 50svw;
+    height: 5vh;
+    position: absolute;
+    top: 90vh;
+}
