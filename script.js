@@ -23,6 +23,9 @@ function myfunc(){
     let gst=(price/100)*3;
     price=price+percentage-gst;
     let total=price+gst;
+    price=formatNumberWithCommas(price);
+    gst=formatNumberWithCommas(gst);
+    total=formatNumberWithCommas(total);
     document.getElementById("price").innerHTML="Price :"+" "+price;
     document.getElementById("gst").innerHTML="Gst(3%) : "+" "+gst;
     document.getElementById("total").innerHTML="Total :"+" "+total;
@@ -43,4 +46,9 @@ function calckacha(){
 
 function clearkacha(){
     document.getElementById("kacha-total").innerHTML="Total :";
+}
+
+function formatNumberWithCommas(number) {
+    if (isNaN(number)) return "Invalid Number";
+    return number.toLocaleString('en-US');
 }
