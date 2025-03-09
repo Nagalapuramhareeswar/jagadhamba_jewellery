@@ -50,5 +50,5 @@ function clearkacha(){
 
 function formatNumberWithCommas(number) {
     if (isNaN(number)) return "Invalid Number";
-    return number.toLocaleString('en-US');
+    return number.toLocaleString('en-IN');
 }
